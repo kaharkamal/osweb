@@ -7,22 +7,22 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-  
+
     {% include header.html %}
 
     {% include homepagecontent.html %}
 
     {% include footer.html %}
-    <script src="{{site.url}}/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="{{site.url}}/assets/js/owl.carousel.min.js"></script>
-    <script src="{{site.url}}/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="{{site.url}}/assets/js/main.js"></script>
+    <script src="{{site.url}}/osweb/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="{{site.url}}/osweb/js/owl.carousel.min.js"></script>
+    <script src="{{site.url}}/osweb/js/bootstrap.bundle.min.js"></script>
+    <script src="{{site.url}}/osweb/js/main.js"></script>
     <script>
       var mybutton = document.getElementById("myBtn");
-      
-      
+
+
       window.onscroll = function() {scrollFunction()};
-      
+
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           mybutton.style.display = "block";
@@ -30,8 +30,8 @@
           mybutton.style.display = "none";
         }
       }
-      
-      
+
+
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
